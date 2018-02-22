@@ -1,0 +1,591 @@
+/* wild card, applies to all*/
+*
+{
+	margin:0;
+	padding:0;
+	font-style:
+}
+
+body
+{
+	font-family:Helvetica;
+}
+
+header
+{
+	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.1)),url(assets/backgReal.jpeg);
+	height:100vh;
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+h4{
+	font-weight:bold;
+    margin-bottom:60px;
+}
+h5{
+	font-weight:bold;
+	text-align:center;
+}
+
+.hero
+{
+	/*
+	position:absolute;
+	width: 1140px;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%)
+	*/
+
+	max-width:1140px;
+	margin:0 auto;
+	float:left;
+	margin-left:10%;
+	margin-top:20%;
+
+}
+
+.row.navBar
+{
+	max-width:1140px;
+	margin:0 auto;
+	float:right;
+	margin-right:10%;
+}
+
+/*main nav class that I defined*/
+.main-nav
+{
+	/*gets rid of bullets*/
+	list-style:none;
+	/*float:right;*/
+	margin-top:60px;
+}
+
+/*anything with the li tag within the main nav class*/
+.main-nav li
+{
+	/*stops the list being displayed one after
+	another, line by line, keeps them all on
+	same line*/
+	display:inline-block;
+	margin-left:30px;
+}
+
+/*this will apply to any a tag within
+an li tag in the main-nav tag*/
+.main-nav li a
+{
+	color:white;
+	/*gets rid of the underline of the hyper links */
+	text-decoration:none;
+	font-size:90%;
+	font-weight:bold;
+
+}
+.main-nav a:hover
+{
+	color:#aaffff;
+	/*border-bottom:2px solid #00C1DF;*/
+	transition: all 0.2s ease-in;
+	/*padding:2px;*/
+}
+/* redundant now no logo*/
+.logo img
+{
+	height:100px;
+	width:100px;
+	float:left;
+	margin-top:30px;
+	opacity: 0.5;
+}
+
+
+h1.whiteFont
+{
+	color:white;
+}
+h3.whiteFont
+{
+	color:white;
+}
+
+/*blue line after fonts of h4 class only, not any derivative class*/
+h4:after{
+	width:200px;
+	height:3px;
+	background-color:#aaffff;
+	display: block;
+	content:"  ";
+	margin: 0 auto;
+	margin-top:30px;
+
+}
+
+section:after
+{
+    width:80%;
+	height:1px;
+	background-color:lightgray;
+	display: block;
+	content:"  ";
+	margin: 0 auto;
+	margin-top:150px;
+
+}
+
+
+/* caters for the btn btn-full, and btn btn-half, classes @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.btn
+{
+	/* draws a button*/
+    border: 2px solid white;
+	/*border: 1px solid #00C1DF;*/
+			/*topBot rigLeft*/
+	padding: 10px 30px;
+	margin: 0px;
+    color:white;
+	text-decoration:none;
+	border-radius:12px;
+	margin-right:15px;
+
+}
+
+.btn-firstInst
+{
+	margin-top: 40px;
+}
+
+
+.btn-halfCol
+{
+	background-color:#00C1DF;
+	color:white;
+}
+.btn-fullCol:hover
+{
+	color:gray;
+	background-color:#aaffff;
+	border: 2px solid #aaffff;
+	transition: all 0.2s ease-in;
+	/*padding:2px;*/
+}
+
+
+.btn-fullColOpp
+{
+    /* draws a button*/
+	border: 2px solid gray;
+			/*topBot rigLeft*/
+	padding: 10px 30px;
+    color:gray;
+	text-decoration:none;
+	border-radius:12px;
+
+
+}
+
+.btn-fullColOpp:hover
+{
+	color:gray;
+	background-color:#aaffff;
+	border: 2px solid #aaffff;
+	transition: all 0.2s ease-in;
+	/*padding:2px;*/
+}
+
+
+/*
+.btn-fullColOpp div
+{
+    width:80%;
+}
+*/
+
+
+
+
+/*section class from here - things I do @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.sectionClassThingsIDo
+{
+	padding-top:50px;
+	padding-bottom:100px;
+}
+
+/* icons class */
+.sectionClassThingsIDo i
+{
+	font-size:40px;
+	color:#aaffff;
+	margin-left:45%;
+	margin-bottom:10%;
+}
+
+
+/*copy on video*/
+.mainParas
+{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	Margin-bottom:30px;
+
+}
+
+.text-center-mainSection
+{
+	margin-top:100px;
+}
+
+
+
+.centerText
+{
+	text-align:center;
+}
+
+
+.h5SubText
+{
+    color:gray;
+    font-weight:100;
+    margin-bottom:80px;
+}
+.colourTextGrey
+{
+    color:grey;
+}
+
+/*section class from here - my work @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+.sectionClassMyWork
+{
+	/*background-color: #ccffff;*/
+	padding-top:10px;
+	padding-bottom:150px;
+}
+
+
+.rowMyWork
+{
+    margin-top:50px;
+	margin-bottom:100px;
+}
+
+.zoomImage
+{
+	width:200px;
+	height:20px;
+	overflow:hidden;
+	text-align:center;
+    transform: scale(1.00);
+	transition:0.5s;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.zoomImage:hover {
+	transform: scale(1.05);
+	transition:0.5s;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+}
+
+
+.myProjImages
+{
+	width:100%;;
+	height:auto;
+    border-radius:15px;
+
+}
+
+/* footer styles @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.sectionFooterDetails
+{
+    margin-bottom:30px;
+    padding-top:30px;
+    background-color:gray;
+    padding-bottom:80px;
+
+
+}
+
+/* footer icons */
+.sectionFooterDetails i
+{
+  margin-left:10%;
+    font-size:35px;
+    color:#aaffff;
+    margin-top:30px;
+	margin-bottom:10%;
+    text-shadow: 2px 2px 5px black;
+    transform: scale(1.0);
+	transition:0.5s;
+
+}
+
+.sectionFooterDetails i:hover
+{
+
+
+
+    transform: scale(1.5);
+	transition:0.5s;
+}
+
+
+/*mail me class @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.mailMeClass
+{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding:10px;
+    margin:0px;
+    background-color: lightgray;;
+}
+
+.frame
+{
+    width: 600px;
+    height: 350px;
+    margin:250px auto 0;
+    position: relative;
+    background: #3c6325;
+    border-radius: 0 0 40px 40px;
+
+
+}
+
+#button_open_envelope
+{
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    z-index: 311;
+    top:250px;
+    left: 208px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px 0;
+    border: 2px solid #ffffff;
+    transition: 3s;
+    text-align:center;
+}
+
+#button_open_envelope:hover{
+    background: #aaffff;
+    border: 2px solid #ccffff;
+    color:gray;
+    transform:scale(1.1);
+    transition: background.25s, transform.5s, ease-in;
+    cursor:pointer;
+    text-align:center:
+
+}
+
+.message
+{
+    position: relative;
+    width: 580px;
+    min-height:300px;
+    height:auto;
+    background: #ffffff;
+    margin: 0 auto;
+    top:30px;
+    box-shadow: 0 0 5px 2px #333;
+    transition: 2s ease-in;
+    transition-delay: 1.5s;
+    z-index:300;
+
+}
+
+.left, .right, .top
+{
+    width:0;
+    height:0;
+    position:absolute;
+    top:0;
+    z-index:310;
+}
+
+.left
+{
+    border-left:300px solid #80ba5e;
+    border-top: 160px solid transparent;
+    border-bottom: 160px solid transparent;
+}
+
+.right
+{
+    border-right:300px solid #80ba5e;
+    border-top: 160px solid transparent;
+    border-bottom: 160px solid transparent;
+    left:300px;
+}
+.top
+{
+    border-right: 300px solid transparent;
+    border-top:200px solid #bbf29a;
+    border-left:300px solid transparent;
+    transition:transform 1s, border 1s, ease-in-out;
+    transform-origin: top;
+    transform: rotateX(0deg);
+    z-index:500;
+}
+
+.bottom
+{
+    width:600px;
+    height:190px;
+    position: absolute;
+    background:#45722b;
+    top:160px;
+    border-radius: 0 0 30px 30px;
+    z-index:310;
+}
+
+.open
+{
+    transform-origin: top;
+    transform:rotateX(180deg);
+    transition:transform.7s, border .7s, z-index.7s ease-in-ou;
+    border-top:200px solid #427326;
+    z-index:200;
+}
+
+
+.pull
+{
+
+    -webkit-animation: message_animation 2s 1 ease-in-out;
+    animation: message_animation 2s 1 ease-in-out;
+    -webkit-animation-delay: .9s;
+    animation-delay:.45s;
+    transition:1.5s;
+    transition-delay:1s;
+    z-index:350;
+}
+
+
+#name, #email, #phone, #messarea, #send
+{
+    margin: 0;
+    padding:0 0 0 10px;
+    width:570px;
+    height:40px;
+    float:left;
+    display:block;
+    font-size: 18px;
+    color: #80ba5e;
+    border: none;
+    border-bottom:1px solid #bdbdbd;
+    letter-spacing: none;
+
+}
+
+#messarea
+{
+    height:117px;
+    width:560px;
+    overflow:auto;
+    border:none;
+    padding:10px;
+
+}
+
+#send
+{
+    width: 580px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background: #80ba5e;
+    color:#ffffff;
+    transition: .35s;
+    letter-spacing:1px;
+}
+
+#send:hover{
+    background: #f4f4f4;
+    color: #80ba5e;
+    transition: .35s;
+}
+
+::-moz-placeholder{color:#7cbc342;font-family:'Ubuntu';font-size: 20px;opacity:1;}
+::-webkit-input-placeholder{color:#7cbc342; font-family:'Ununtu'; font-size:20px; opacity:1;}
+
+*:focus{outline:none;}
+
+input:focus:invalid, textarea:focus:invalid
+{
+    /*when a field is considered invalid by the browser*/
+    border-color:#28921f;
+    box-shadow: 0 0 5px #5cd053;
+
+}
+@-webkit-keyframes message_animation
+{
+    0%
+    {
+        transform:translateY(0px);
+        z-index:300;
+        transition: 1s ease-in-out;
+    }
+    50%
+    {
+        transform:translateY(-340px);
+        z-index:300;
+        transition: 1s ease-in-out;
+    }
+     51%
+    {
+        transform:translateY(-340px);
+        z-index:300;
+        transition: 1s ease-in-out;
+    }
+    100%
+    {
+        transform:translateY(0px);
+        z-index:300;
+        transition: 1s ease-in-out;
+    }
+}
+
+
+@keyframes message_animation
+{
+    0%
+    {
+        transform:translateY(0px);
+        z-index:300;
+        transition: 1s ease-in-out;
+    }
+    50%
+    {
+        transform:translateY(-340px);
+        z-index:300;
+        transition: 1s ease-in-out;
+    }
+     51%
+    {
+        transform:translateY(-340px);
+        z-index:300;
+        transition: 1s ease-in-out;
+    }
+    100%
+    {
+        transform:translateY(0px);
+        z-index:300;
+        transition: 1s ease-in-out;
+    }
+}
+
+
+
+

@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html>
+
+
+<head>
+	<title> PaulTreadwell.ga</title>
+    <!-- for right size page on different sized screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1., user-scalable=no" />
+    <!-- , target-densityDpi=device-dpi taken out of the above -->
+    <!-- the order here matters; as css styles are applied in a certain
+	order, dependent on which is defined first -->
+	<!--<link href="bootstrap-4.0.0-dist/css/bootstrap.css" rel="stylesheet"/>-->
+	<!--<link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet"/>-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<link href=Main.css rel="stylesheet" type="text/css">
+    <!-- for web page title icon -->
+	<link rel="icon" href="http://paultreadwell.ga/assets/image-Black.png" type="image/x-icon" />
+    <!--for main page icon use -->
+	<!--<link href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet"/>-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <!-- smooth scroll JavaScript, pass in id of class name for section-->
+    <!-- did not work in Safari, so swapped to jQuery variant -->
+    <!--
+    <script>
+    function smoothScroll(classIn)
+        {
+            document.querySelector(classIn).scrollIntoView({
+            behavior: 'smooth', block:"start"});
+            setTimeout(function(){container.scrollTop = container.scrollHeight;},1);
+        }
+    </script>
+    -->
+    <script>
+   // var formInst = document.getElementById('contactForm');
+        contactForm.onsubmit = console.log(formInst.name) ;
+
+
+
+
+    </script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+</head>
+
+
+
+<body>
+	<header>
+        <!-- row must be an existing class -->
+		<div class="row navBar">
+			<!--<div class="logo">
+				<img src="assets/logoWhite.svg">
+			</div>-->
+
+			<ul class="main-nav">
+
+                <li><a href="#aboutMe"> ABOUT ME</a></li>
+				<li><a href="#projects"> MY WORK</a></li>
+			 <li><a href="#footerdetails"> CONTACT ME</a></li>
+			</ul>
+		</div>
+
+		<div class="hero">
+			<h1 class="whiteFont"> Hi, I'm Paul Treadwell</h1>
+			<h3 class="whiteFont"> I develop software in Java, <br> C#, Swift, and web technologies</h3>
+			     <!-- old code to call Javascript smooth scroll function -->
+					<!--<a href="javascript:smoothScroll('#aboutMe')" class="btn btn-fullCol btn-firstInst" > Learn More... </a>-->
+                    <!--on click version of above, had problems -->
+                    <!-- <a onClick="smoothScroll('#aboutMe')" class="btn btn-fullCol" > Learn More... </a>-->
+					<!-- <a href="#" class="btn btn-halfCol"> What the... </a> -->
+
+            <a href="#aboutMe" class="btn btn-fullCol btn-firstInst" > Learn More... </a>
+
+		</div>
+	</header>
+
+
+	<section id="aboutMe" class="sectionClassThingsIDo">
+		<h4 class="text-center text-center-mainSection"> WHAT I DO</h4>
+		<h5 class="h5SubText"> "I have a vast and broad skillset, and range of experiences"</h5>
+
+
+		<!-- these are  from bootstrap container / row / col-md-3- -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-4-firstInst">
+				<i class="fa fa-code"></i>
+				<h5 >CODE</h5>
+					<p class="centerText colourTextGrey">
+							Although I am experienced in many component parts of the conglomerate that is computing, my  passion lies in problem solving. I am confident in multiple programming languages, but my predominant, go-to languages are C# and Java. I am strong enough to know many lines of the more advanced parts of these, and utilise concepts such as SOLID programming principles, and design patterns to aid robust, tehcnical-debt free software.
+					</p>
+				</div>
+				<div class="col-md-4">
+				<i class="fa fa-thumbs-up"></i>
+				<h5 >MOBILE & WEB </h5>
+					<p class="centerText colourTextGrey">
+							I have experience in studying and teachign many web and mobile technologies, including HTML5, CSS3, Javascript, jQuery, and Swift Apple app development in XCode. I have also studied many supporting web technogies such as ASP.Net through a MVC setup, HTML5 and CSS3, JQuery Mobile
+					</p>
+				</div>
+
+				<div class="col-md-4">
+				<i class="fa fa-paper-plane"></i>
+				<h5 >BROAD</h5>
+					<p class="centerText colourTextGrey">
+							I have spent the last number of years as an educator and middle leader in the computing domain. I have taught things such as Linux Shell, OOP, and web development, as well as programming, in a multitude of environments and languages. Although my experience is within teaching, my passion is in programming. Now is the right time for me to broaden my horizons, and get involved with things outside of this profession
+
+					</p>
+				</div>
+			</div>
+            <div class="row">
+                <div class="col-md-5 col-sm-4 col-3">
+                </div>
+                <div class="col-md-3 col-sm-4 col-5">
+                    <a href="#projects" class="btn btn-fullColOpp" > See My Work... </a>
+                    <!--<a href="javascript:smoothScroll('#projects')" class="btn btn-fullColOpp" > See My Work... </a> -->
+                    <!-- javascript smooth scroll taken out for jQuery -->
+                </div>
+                <div class="col-md-4 col-sm-4 col-4">
+                </div>
+            </div>
+            </div>
+
+    </section>
+
+
+	<section id="projects" class="sectionClassMyWork">
+
+		<h4 class="text-center text-center-mainSection"> MY WORK</h4>
+
+		<div class="container">
+			<div class="row rowMyWork">
+                <div class="col-md-1 order-md-1">
+                    <!-- row for padding -->
+                </div>
+				<div class="col-md-4 order-md-2">
+					<h5>XCODE</h5>
+					<p class="centerText rowMyWorkTextFirstInst colourTextGrey">
+							An example of development that I did as part of my final year in the BSc Computer Science I am currently in study for. It was a child's calculator app, which teaches younger people basic maths. It was developed in XCode using Swift, and utilised elements such as sound libraries, custom gestures, programmatically writing a fully responsive front end.
+					</p>
+				</div>
+                <div class="col-md-1 order-md-3">
+                      <!-- row for padding -->
+                </div>
+				<div class="col-md-5 order-md-4">
+					<a href="assets/Swift-calculator-app1.png" target="blank"> <img src="assets/XCodeSwiftiMacSmall.png" alt="Child's Calculator in XCode > Swift" class="zoomImage myProjImages"/> </a>
+				</div>
+                <div class="col-md-1 order-md-5">
+                      <!-- row for padding -->
+                </div>
+			</div>
+
+
+
+
+		<div class="row rowMyWork">
+                <div class="col-md-1 order-md-1">
+                    <!-- row for padding -->
+                </div>
+				<div class="col-md-4 order-md-4">
+					<h5>JAVA</h5>
+					<p class="centerText colourTextGrey">
+                        Another piece of software I developed as part of the BSc Computer Science; a doctor's surgery appointment application. This was the largest piece of software I have written as an individual, utilising well over 100 classes, as well as unit test classes. The project saw me programmatically create the whole front end, and use design patterns to achieve the best possible programming practices.
+                    </p>
+				</div>
+                <div class="col-md-1 order-md-3">
+                    <!-- row for padding -->
+                </div>
+				<div class="col-md-5 order-md-2">
+					<a href=assets/JavaLarge.png> <img src="assets/JavaSmall.png" alt="Doctor's appoinment system in Netbeans > Java" class="zoomImage myProjImages"/> </a>
+				</div>
+            <div class="col-md-1 order-md-5">
+                    <!-- row for padding -->
+                </div>
+			</div>
+
+
+            <div class="row rowMyWork">
+                <div class="col-md-1 order-md-1">
+                    <!-- row for padding -->
+                </div>
+				<div class="col-md-4 order-md-2">
+					<h5>JAVASCRIPT & JQUERY</h5>
+					<p class="centerText rowMyWorkTextFirstInst colourTextGrey">
+							An example of development that I did as part of my final year in the BSc Computer Science I am currently in study for. It was a child's calculator app, which teaches younger people basic maths. It was developed in XCode using Swift, and utilised elements such as sound libraries, custom gestures, programmatically writing a fully responsive front end.
+					</p>
+				</div>
+                <div class="col-md-1 order-md-3">
+                      <!-- row for padding -->
+                </div>
+				<div class="col-md-5 order-md-4">
+					<a href="assets/JavascriptLarge.png" target="blank"> <img src="assets/JavascriptSmall.png" alt="Child's Calculator in XCode > Swift" class="zoomImage myProjImages"/> </a>
+				</div>
+                <div class="col-md-1 order-md-5">
+                      <!-- row for padding -->
+                </div>
+			</div>
+
+
+			</div>
+
+
+    </section>
+
+    <section id="mailMe" class="mailMeClass">
+        <h4 class="text-center text-center-mainSection"> GET IN TOUCH </h4>
+    <div class="frame">
+        <div id="button_open_envelope">
+            Email me
+        </div>
+
+        <div class="message">
+            <form id="contactForm" method="post" action="MAILTO:mr_treadwell@live.co.uk" enctype="text/plain">
+                <input type="text" name="name" id="name" placeholder=" Name* " required>
+                <input type="text" name="email" id="email" placeholder=" Email* " required>
+                <input type="text" name="phone" id="phone" placeholder=" Phone Number (optional) " autofocus>
+                <textarea type="message" name="message" id="messarea" placeholder=" Message* " required> </textarea>
+                <input type="text" name="address" id="address" style="display: none;">
+                <input type="submit" name="submit" value="Send" id="send">
+            </form>
+        </div>
+            <div class="bottom">
+            </div>
+
+            <div class="left">
+            </div>
+
+            <div class="right">
+            </div>
+
+            <div class="top">
+            </div>
+        <script src="script.js"></script>
+    </div>
+
+    </section>
+
+
+     <section id="footerdetails" class="sectionFooterDetails">
+
+        <div class="container">
+            <div class="row" id="footerIcons">
+                <div class="col-md-4 col-sm-4 col-4">
+                </div>
+
+
+                <div class="col-md-1 col-sm-1 col-1">
+                    <a href="https://www.facebook.com/Treadwell.P" target="blank"> <i class="fa fa-facebook-square"></i> </a>
+                </div>
+                <div class="col-md-1 col-sm-1 col-1">
+                    <a href="https://twitter.com/MrPaulTreadwell" target="blank"> <i class="fa fa-twitter-square"></i> </a>
+                </div>
+                <div class="col-md-1 col-sm-1 col-1">
+                    <a href="https://github.com/f4tp" target="blank">  <i class="fa fa-git-square"></i> </a>
+                </div>
+                <div class="col-md-1 col-sm-1 col-1">
+                    <a href="https://bitbucket.org/f4t_p" target="blank"> <i class="fa fa-bitbucket-square"></i> </a>
+                </div>
+
+
+                <div class="col-md-4 col-sm-4 col-2">
+                </div>
+            </div>
+            <div class="row" id="copyright">
+                <div class="col-md-4 col-sm-4 col-2">
+                </div>
+
+                 <div class="col-md-4 col-sm-4 col-2">
+                <h5>Copyright PaulTreadwell 2018</h4>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-2">
+                </div>
+            </div>
+         </div>
+    </section>
+
+
+
+
+
+
+
+</body>
+<footer>
+
+</footer>
+</html>
