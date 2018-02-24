@@ -13,11 +13,15 @@ body
 
 header
 {
-	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.1)),url(assets/backgReal.jpeg);
+	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.1)),url(assets/backgroundSky.png);
 	height:100vh;
 	background-position:center;
 	background-size:cover;
 	background-attachment:fixed;
+     -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h4{
@@ -29,69 +33,220 @@ h5{
 	text-align:center;
 }
 
-.hero
-{
-	/*
-	position:absolute;
-	width: 1140px;
-	top:50%;
-	left:50%;
-	transform:translate(-50%, -50%)
-	*/
 
-	max-width:1140px;
-	margin:0 auto;
-	float:left;
-	margin-left:10%;
-	margin-top:20%;
+
+
+
+
+
+
+
+
+
+
+/*all heights that are greater than...*/
+
+@media all and (max-height:300px)
+{
+    .hero
+    {
+            max-width:1140px;
+            margin:0 auto;
+            float:right;
+            margin-left:10%;
+            margin-right:15%;
+            margin-top:10%;
+    }
 
 }
 
-.row.navBar
+/*all heights that are equal to or less than*/
+@media not all and (max-height:300px)
 {
-	max-width:1140px;
-	margin:0 auto;
-	float:right;
-	margin-right:10%;
-}
-
-/*main nav class that I defined*/
-.main-nav
-{
-	/*gets rid of bullets*/
-	list-style:none;
-	/*float:right;*/
-	margin-top:60px;
-}
-
-/*anything with the li tag within the main nav class*/
-.main-nav li
-{
-	/*stops the list being displayed one after
-	another, line by line, keeps them all on
-	same line*/
-	display:inline-block;
-	margin-left:30px;
-}
-
-/*this will apply to any a tag within
-an li tag in the main-nav tag*/
-.main-nav li a
-{
-	color:white;
-	/*gets rid of the underline of the hyper links */
-	text-decoration:none;
-	font-size:90%;
-	font-weight:bold;
+    .hero
+    {
+        max-width:1140px;
+        margin:0 auto;
+        float:right;
+        margin-left:10%;
+        margin-right:15%;
+        margin-top:18%;
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*all widths that are less than...*/
+@media all and (max-width:376px)
+{
+    /*main nav class that I defined*/
+    .main-nav
+    {
+        max-width:1140px;
+        /*gets rid of bullets*/
+        list-style:none;
+        /*float:right;*/
+        margin-top:60px;
+        margin-left:5%;
+        float:left;
+    }
+
+    /*anything with the li tag within the main nav class*/
+    .main-nav li
+    {
+        /*stops the list being displayed one after
+        another, line by line, keeps them all on
+        same line*/
+        display:inline-block;
+        margin-left:10px;
+    }
+        /*this will apply to any a tag within
+    an li tag in the main-nav tag*/
+    .main-nav li a
+    {
+        color:white;
+        /*gets rid of the underline of the hyper links */
+        text-decoration:none;
+        font-size:75%;
+        font-weight:bold;
+
+    }
+}
+
+
+
+/*all widths that are equal to or greater than...*/
+@media not all and (max-width:376px)
+{
+        /*main nav class that I defined*/
+    .main-nav
+    {
+        max-width:1140px;
+        /*gets rid of bullets*/
+        list-style:none;
+        /*float:right;*/
+        margin-top:60px;
+        margin-left:10%;
+        float:left;
+    }
+
+    /*anything with the li tag within the main nav class*/
+    .main-nav li
+    {
+        /*stops the list being displayed one after
+        another, line by line, keeps them all on
+        same line*/
+        display:inline-block;
+        margin-left:20px;
+    }
+        /*this will apply to any a tag within
+    an li tag in the main-nav tag*/
+    .main-nav li a
+    {
+        color:white;
+        /*gets rid of the underline of the hyper links */
+        text-decoration:none;
+        font-size:100%;
+        font-weight:bold;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heroRow
+{
+    max-width:1140px;
+}
+
+
 .main-nav a:hover
 {
-	color:#aaffff;
-	/*border-bottom:2px solid #00C1DF;*/
-	transition: all 0.2s ease-in;
-	/*padding:2px;*/
+    color:#aaffff;
+    /*border-bottom:2px solid #00C1DF;*/
+    transition: all 0.2s ease-in;
+    /*padding:2px;*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* redundant now no logo*/
 .logo img
 {
@@ -222,8 +377,8 @@ section:after
 	color:#aaffff;
 	margin-left:45%;
 	margin-bottom:10%;
-}
 
+}
 
 /*copy on video*/
 .mainParas
@@ -266,7 +421,8 @@ section:after
 {
 	/*background-color: #ccffff;*/
 	padding-top:10px;
-	padding-bottom:150px;
+	padding-bottom:125px;
+
 }
 
 
@@ -287,6 +443,7 @@ section:after
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 
 
+
 }
 
 .zoomImage:hover {
@@ -298,9 +455,10 @@ section:after
 
 .myProjImages
 {
-	width:100%;;
+	width:100%;
 	height:auto;
-    border-radius:15px;
+    border-radius:25px;
+
 
 }
 
@@ -323,7 +481,7 @@ section:after
     /*text-shadow: 2px 2px 5px black;*/
     transform: scale(1.0);
 	transition:0.5s;
-
+    display:inline-block;
 }
 
 .sectionFooterDetails i:hover
@@ -343,6 +501,8 @@ section:after
     text-align:center;
     margin-top:30px;
 }
+
+
 .sectionFooterDetails:after
 {
 

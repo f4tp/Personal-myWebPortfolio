@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 
 
@@ -11,7 +11,8 @@
 	order, dependent on which is defined first -->
 	<!--<link href="bootstrap-4.0.0-dist/css/bootstrap.css" rel="stylesheet"/>-->
 	<!--<link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet"/>-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
 	<link href=Main.css rel="stylesheet" type="text/css">
     <!-- for web page title icon -->
@@ -68,16 +69,11 @@
 <body>
 	<header>
         <!-- row must be an existing class -->
-		<div class="row navBar">
-			<!--<div class="logo">
-				<img src="assets/logoWhite.svg">
-			</div>-->
-
+		<div class="row heroRow">
 			<ul class="main-nav">
-
                 <li><a href="#aboutMe"> ABOUT ME</a></li>
 				<li><a href="#projects"> MY WORK</a></li>
-			 <li><a href="#footerdetails"> CONTACT ME</a></li>
+                <li><a href="#footerdetails"> CONTACT ME</a></li>
 			</ul>
 		</div>
 
@@ -105,17 +101,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-md-4-firstInst">
-				<i class="fa fa-code"></i>
+                    <i class="fa fa-code" style="font-weight:bold;"></i>
 				<h5 >CODE</h5>
 					<p class="centerText colourTextGrey">
-							Although I am experienced in many component parts of the conglomerate that is computing, my  passion lies in problem solving. I am confident in multiple programming languages, but my predominant, go-to languages are C# and Java. I am strong enough to know many lines of the more advanced parts of these, and utilise concepts such as SOLID programming principles, and design patterns to aid robust, tehcnical-debt free software.
+							Although I am experienced in many component parts of the conglomerate that is computing, my passion lies in problem solving. I am confident in multiple programming languages, and my predominant, go-to languages are C# and Java. I am strong enough to know many lines of the more advanced parts, and utilise concepts such as SOLID programming principles, and design patterns to aid robust, technical-debt free software.
 					</p>
 				</div>
 				<div class="col-md-4">
 				<i class="fa fa-thumbs-up"></i>
 				<h5 >MOBILE & WEB </h5>
 					<p class="centerText colourTextGrey">
-							I have experience in studying and teachign many web and mobile technologies, including HTML5, CSS3, Javascript, jQuery, and Swift Apple app development in XCode. I have also studied many supporting web technogies such as ASP.Net through a MVC setup, HTML5 and CSS3, JQuery Mobile
+							I have experience in studying and teaching many web and mobile technologies, including HTML5, CSS3, JavaScript, jQuery, and Swift Apple app development in XCode. I have also studied many supporting web technologies such as ASP.Net through a MVC setup, HTML5 and CSS3, JQuery Mobile.
 					</p>
 				</div>
 
@@ -123,20 +119,20 @@
 				<i class="fa fa-paper-plane"></i>
 				<h5 >BROAD</h5>
 					<p class="centerText colourTextGrey">
-							I have spent the last number of years as an educator and middle leader in the computing domain. I have taught things such as Linux Shell, OOP, and web development, as well as programming, in a multitude of environments and languages. Although my experience is within teaching, my passion is in programming. Now is the right time for me to broaden my horizons, and get involved with things outside of this profession
+							I have spent the last number of years as an educator and middle leader in the computing domain. I have taught things such as Linux Shell, OOP, and web development, as well as programming, in a multitude of environments and languages. Although my experience is within teaching, my passion is in programming. Now is the right time for me to broaden my horizons, and get involved with things outside of this profession.
 
 					</p>
 				</div>
 			</div>
             <div class="row">
-                <div class="col-md-5 col-sm-4 col-3">
+                <div class="col-l4-4 col-md-5 col-sm-4 col-3">
                 </div>
-                <div class="col-md-3 col-sm-4 col-5">
+                <div class="col-lg-4 col-md-4 col-sm-3 col-5">
                     <a href="#projects" class="btn btn-fullColOpp" > See My Work... </a>
                     <!--<a href="javascript:smoothScroll('#projects')" class="btn btn-fullColOpp" > See My Work... </a> -->
                     <!-- javascript smooth scroll taken out for jQuery -->
                 </div>
-                <div class="col-md-4 col-sm-4 col-4">
+                <div class="col-lg-4 col-md-3 col-sm-5 col-4">
                 </div>
             </div>
             </div>
@@ -150,22 +146,25 @@
 
 		<div class="container">
 			<div class="row rowMyWork">
-                <div class="col-md-1 order-md-1">
+                <div class="col-lg-1 order-lg-1 hidden-md-down">
                     <!-- row for padding -->
                 </div>
-				<div class="col-md-4 order-md-2">
+				<div class=" col-lg-4 order-lg-2 col-md-6 order-md-1">
 					<h5>XCODE</h5>
 					<p class="centerText rowMyWorkTextFirstInst colourTextGrey">
 							An example of development that I did as part of my final year in the BSc Computer Science I am currently in study for. It was a child's calculator app, which teaches younger people basic maths. It was developed in XCode using Swift, and utilised elements such as sound libraries, custom gestures, programmatically writing a fully responsive front end.
 					</p>
 				</div>
-                <div class="col-md-1 order-md-3">
-                      <!-- row for padding -->
+
+                <div class="col-lg-1 order-lg-3 hidden-md-down">
+                    <!-- row for padding -->
                 </div>
-				<div class="col-md-5 order-md-4">
+
+
+				<div class="col-lg-5 order-lg-4 col-md-6 order-md-2 col-md-5 order-md-4">
 					<a href="assets/Swift-calculator-app1.png" target="blank"> <img src="assets/XCodeSwiftiMacSmall.png" alt="Child's Calculator in XCode > Swift" class="zoomImage myProjImages"/> </a>
 				</div>
-                <div class="col-md-1 order-md-5">
+                <div class="col-lg-1 order-lg-5 hidden-md-down">
                       <!-- row for padding -->
                 </div>
 			</div>
@@ -174,44 +173,68 @@
 
 
 		<div class="row rowMyWork">
-                <div class="col-md-1 order-md-1">
+                <div class="col-lg-1 order-lg-1 hidden-md-down">
                     <!-- row for padding -->
                 </div>
-				<div class="col-md-4 order-md-4">
+				<div class="col-lg-4 order-lg-4 col-md-6 order-md-4">
 					<h5>JAVA</h5>
 					<p class="centerText colourTextGrey">
                         Another piece of software I developed as part of the BSc Computer Science; a doctor's surgery appointment application. This was the largest piece of software I have written as an individual, utilising well over 100 classes, as well as unit test classes. The project saw me programmatically create the whole front end, and use design patterns to achieve the best possible programming practices.
                     </p>
 				</div>
-                <div class="col-md-1 order-md-3">
+                <div class="col-lg-1 order-lg-3 hidden-md-down">
                     <!-- row for padding -->
                 </div>
-				<div class="col-md-5 order-md-2">
+				<div class="col-lg-5 order-lg-2 col-md-6 order-md-2">
 					<a href=assets/JavaLarge.png> <img src="assets/JavaSmall.png" alt="Doctor's appoinment system in Netbeans > Java" class="zoomImage myProjImages"/> </a>
 				</div>
-            <div class="col-md-1 order-md-5">
+            <div class="col-lg-1 order-lg-5 hidden-md-down">
                     <!-- row for padding -->
                 </div>
 			</div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="row rowMyWork">
-                <div class="col-md-1 order-md-1">
+               <div class="col-lg-1 order-lg-1 hidden-md-down">
                     <!-- row for padding -->
                 </div>
-				<div class="col-md-4 order-md-2">
+                <div class=" col-lg-4 order-lg-2 col-md-6 order-md-1">
 					<h5>JAVASCRIPT & JQUERY</h5>
 					<p class="centerText rowMyWorkTextFirstInst colourTextGrey">
-							An example of development that I did as part of my final year in the BSc Computer Science I am currently in study for. It was a child's calculator app, which teaches younger people basic maths. It was developed in XCode using Swift, and utilised elements such as sound libraries, custom gestures, programmatically writing a fully responsive front end.
+                        Another app wrote for my BSc Computer Science. In this instance I was required to write a shopping list mobile web application using HTML, JavaScript, and jQuery. The project was not large enough to host a database and use technology such as .ASP or .PHP to CRUD for persistent storage. Instead, it utilised local storage, chosen over use of cookies, due to size implications of the data that was required.
 					</p>
 				</div>
-                <div class="col-md-1 order-md-3">
+                <div class="col-lg-1 order-lg-3 hidden-md-down">
                       <!-- row for padding -->
                 </div>
-				<div class="col-md-5 order-md-4">
+				<div class="col-lg-5 order-lg-4 col-md-6 order-md-2 col-md-5 order-md-4">
 					<a href="assets/JavascriptLarge.png" target="blank"> <img src="assets/JavascriptSmall.png" alt="Child's Calculator in XCode > Swift" class="zoomImage myProjImages"/> </a>
 				</div>
-                <div class="col-md-1 order-md-5">
+                <div class="col-lg-1 order-lg-5 hidden-md-down">
                       <!-- row for padding -->
                 </div>
 			</div>
@@ -303,36 +326,37 @@
 
         <div class="container">
             <div class="row" id="copyright">
-                <div class="col-md-4 col-sm-3 col-2">
+                <div class="col-lg-4 col-md-3 col-sm-3 col-2">
                 </div>
 
-                 <div class="col-md-4 col-sm-6 col-8">
-                     <p class="copyrightText"> Paul Treadwell © 2018     |    <a href="mailto:mr_treadwell@live.co.uk?Subject=Query%20via%20paultreadwell.ga" target="_top">Email Me</a></p>
+                 <div class="col-lg-4  col-md-6 col-sm-6 col-8">
+                     <p class="copyrightText"> Paul Treadwell &copy; 2018     |    <a href="mailto:mr_treadwell@live.co.uk?Subject=Query%20via%20paultreadwell.ga" target="_top">Email Me</a></p>
                 </div>
 
-                <div class="col-md-4 col-sm-3 col-2">
+                <div class="col-lg-4 col-md-3 col-sm-3 col-2">
                 </div>
             </div>
+
+
             <div class="row" id="footerIcons">
-                <div class="col-md-4 col-sm-2 col-0">
+                <div class="col-lg-4  col-md-4 col-sm-2 col-2">
                 </div>
 
 
-                <div class="col-md-1 col-sm-2 col-3">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2">
                     <a href="https://www.facebook.com/Treadwell.P" target="blank"> <i class="fa fa-facebook-square"></i> </a>
                 </div>
-                <div class="col-md-1 col-sm-2 col-3">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2">
                     <a href="https://twitter.com/MrPaulTreadwell" target="blank"> <i class="fa fa-twitter-square"></i> </a>
                 </div>
-                <div class="col-md-1 col-sm-2 col-3">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2">
                     <a href="https://github.com/f4tp" target="blank">  <i class="fa fa-git-square"></i> </a>
                 </div>
-                <div class="col-md-1 col-sm-2 col-3">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-2">
                     <a href="https://bitbucket.org/f4t_p" target="blank"> <i class="fa fa-bitbucket-square"></i> </a>
                 </div>
 
-
-                <div class="col-md-4 col-sm-2 col-0">
+                <div class="col-lg-4  col-md-4 col-sm-2 col-2">
                 </div>
             </div>
 
