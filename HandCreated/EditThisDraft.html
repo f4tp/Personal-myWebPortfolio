@@ -80,7 +80,13 @@
 		<div class="hero">
 			<h1 class="whiteFont"> Hi, I'm Paul Treadwell</h1>
 			<h3 class="whiteFont"> I develop software in Java, <br> C#, Swift, and web technologies</h3>
-			    <a href="#aboutMe" class="btn btn-fullCol btn-firstInst" > Learn More... </a>
+			     <!-- old code to call Javascript smooth scroll function -->
+					<!--<a href="javascript:smoothScroll('#aboutMe')" class="btn btn-fullCol btn-firstInst" > Learn More... </a>-->
+                    <!--on click version of above, had problems -->
+                    <!-- <a onClick="smoothScroll('#aboutMe')" class="btn btn-fullCol" > Learn More... </a>-->
+					<!-- <a href="#" class="btn btn-halfCol"> What the... </a> -->
+
+            <a href="#aboutMe" class="btn btn-fullCol btn-firstInst" > Learn More... </a>
 
 		</div>
 	</header>
@@ -215,6 +221,82 @@
 
     </section>
 
+    <!--
+    <section class="contactMeReal">
+        <div class="container" id="contactMeContainer">
+        </div>
+    </section>
+    -->
+            <!--
+                  <form id="contact" action="sendEmail.asp" method="POST">
+                    <h3 class="H3contactForm">CONTACT ME</h3>
+                    <fieldset>
+                      <input placeholder="Your name" type="text" tabindex="1" name="name" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                      <input placeholder="Your Email Address" type="email" tabindex="2" name="email" required>
+                    </fieldset>
+
+                    <fieldset>
+                      <input placeholder="Your Phone Number" type="tel" tabindex="3" name="phone" required>
+                    </fieldset>
+                    <fieldset>
+                      <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" name="url" required>
+                    </fieldset>
+                    <fieldset>
+                      <textarea placeholder="Type your Message Here...." tabindex="5" name="comments" required></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </fieldset>
+                  </form>
+            -->
+
+
+
+
+
+
+    <!-- section taken out, envelope contact form, some bugs -->
+<!--
+    <section id="mailMe" class="mailMeClass">
+        <h4 class="text-center text-center-mainSection"> GET IN TOUCH </h4>
+    <div class="frame">
+        <div id="button_open_envelope">
+            Email me
+        </div>
+
+        <div class="message">
+            <form id="contactForm" method="post" action="MAILTO:mr_treadwell@live.co.uk" enctype="text/plain">
+                <input type="text" name="name" id="name" placeholder=" Name* " required>
+                <input type="text" name="email" id="email" placeholder=" Email* " required>
+                <input type="text" name="phone" id="phone" placeholder=" Phone Number (optional) " autofocus>
+                <textarea type="message" name="message" id="messarea" placeholder=" Message* " required> </textarea>
+                <input type="text" name="address" id="address" style="display: none;">
+                <input type="submit" name="submit" value="Send" id="send">
+            </form>
+        </div>
+            <div class="bottom">
+            </div>
+
+            <div class="left">
+            </div>
+
+            <div class="right">
+            </div>
+
+            <div class="top">
+            </div>
+        <script src="script.js"></script>
+    </div>
+
+    </section>
+
+
+
+
+-->
 
  <section id="footerdetails" class="sectionFooterDetails">
 
