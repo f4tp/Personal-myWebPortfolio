@@ -86,7 +86,7 @@ h5{
     .hero
     {
         float:left;
-        margin-top:0%;
+        margin-top:2%;
         margin-left:5%;
         margin-right:5%;
     }
@@ -105,8 +105,9 @@ h5{
         /*gets rid of bullets*/
         list-style:none;
         /*float:right;*/
-        margin-top:60px;
-        margin-left:10%;
+        margin-top:40px;
+        /*margin-left:10%;*/
+        margin-bottom: 30px;
         float:left;
 
 
@@ -137,7 +138,7 @@ h5{
 
 /*LARGE SCREEN*/
 /*all widths that are equal to or greater than...*/
-@media not all and (max-width:375px)
+@media not all and (max-width:442px)
 {
     .main-nav li a
     {
@@ -145,49 +146,44 @@ h5{
     }
     .main-nav
     {
-        margin-left:10%;
+        margin-left:25px;;
     }
 }
 
 /*SMALL SCREEN*/
 /*all widths that are less than...*/
-@media all and (max-width:375px)
+@media all and (max-width:442px)
 {
+    .main-nav
+    {
+        margin-left:10px;
+
+    }
     .main-nav li a
     {
         font-size:85%;
     }
+
+}
+
+
+/*SMALLEST SCREEN*/
+/*all widths that are less than...*/
+@media all and (max-width:374px)
+{
     .main-nav
     {
-        margin-left:8%;
+        margin-left:6px;
+
     }
+    .main-nav li a
+    {
+        font-size:75%;
+    }
+
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.heroRow
-{
-    max-width:1140px;
-}
 
 
 .main-nav a:hover
