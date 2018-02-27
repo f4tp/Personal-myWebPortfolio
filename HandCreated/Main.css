@@ -3,8 +3,6 @@
 {
 	margin:0;
 	padding:0;
-	font-style:
-
 }
 html
 {
@@ -418,7 +416,7 @@ section:after
 .sectionClassThingsIDo
 {
 	padding-top:10px;
-	padding-bottom:140px;
+	padding-bottom:20px;
 }
 
 /* icons class */
@@ -428,7 +426,7 @@ section:after
 	color:#aaffff;
 	margin-left:46%;
 
-	margin-bottom:10%;
+	/*margin-bottom:10%;*/
 
 }
 
